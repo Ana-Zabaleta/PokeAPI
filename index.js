@@ -57,7 +57,7 @@ async function pintarUnPokemon(character, lugar) {
   const h2 = document.createElement("h2"); //<h2></h2>
   h2.textContent = infoPokemon.name;
   const p = document.createElement("p"); //<p></p>
-  p.textContent = `Numero: ${infoPokemon.id}`;
+  p.textContent = `Número: ${infoPokemon.id}`;
 
   li.append(img, h2, p);
   lugar.appendChild(li);
