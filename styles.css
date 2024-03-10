@@ -20,6 +20,23 @@ body {
 .logo {
   margin-bottom: 20px;
   width: 20%;
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 h1 {
   text-transform: uppercase;
@@ -45,8 +62,26 @@ li {
   transition: all 200ms ease;
 }
 
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+}
+
 li:hover {
   animation: bounce 2s infinite;
+  background: linear-gradient(
+    45deg,
+    #e6fb04,
+    #ff6600,
+    #00ff66,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #6e0dd0,
+    #ff3300,
+    #099fff
+  );
 }
 @keyframes bounce {
   20% {
