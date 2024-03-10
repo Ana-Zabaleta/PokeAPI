@@ -16,17 +16,7 @@ async function cargarDatos(endPoint) {
     pintarUnPokemon(data, sectionPokemon);
   }
 }
-/*const data = await response.json();
-  console.log(data);
-  if (data.results) {
-    //pintar muchos
-    const array = data.results;
-    pintarCharacters(array, sectionCharacters);
-  } else {
-    //pintar uno
-    pintarUnCharacter(data, sectionCharacters);
-  }
-}*/
+
 cargarDatos(apiUrl);
 //cargarDatos(apiUrl + "/1");
 
